@@ -5,7 +5,7 @@ import {AccountBox, Article, Group, House, ModeNight, Person, Settings, Storefro
 function Sidebar() {
     return (
         <Box flex={1} sx={{display: {xs: "none", md: "flex"}}}>
-            <Box position="fixed">
+            <Box position="fixed" sx={{marginTop: "65px"}}>
                 <List disablePadding>
                     <ListItemButton sx={{pl: 4}} component={"a"} href={"#home"}>
                         <ListItemIcon>

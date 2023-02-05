@@ -16,7 +16,7 @@ import {
 function Rightbar() {
     return (
         <Box flex={2} sx={{display: {xs: "none", sm: "flex"}}}>
-            <Box position="fixed">
+            <Box position="fixed" sx={{marginTop: "65px"}}>
                 <Box sx={{mt: "10px"}}>
                     <Typography variant="h6" fontWeight={100}>Online Friends</Typography>
                     <AvatarGroup max={6}>

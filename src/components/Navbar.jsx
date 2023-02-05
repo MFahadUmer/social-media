@@ -18,7 +18,7 @@ function Navbar() {
         display: "none",
         gap: "25px",
         alignItems: "center",
-        [theme.breakpoints.up("sm")]:{
+        [theme.breakpoints.up("sm")]: {
             display: "flex"
         }
     }))
@@ -26,27 +26,31 @@ function Navbar() {
         display: "flex",
         gap: "5px",
         alignItems: "center",
-        [theme.breakpoints.up("sm")]:{
+        [theme.breakpoints.up("sm")]: {
             display: "none",
         }
     }))
     return (
-        <AppBar position="sticky">
+        <AppBar position="fixed">
             <StyledToolbar>
                 <Typography variant="h5" sx={{display: {xs: "none", sm: "block"}}}>Social</Typography>
-                <ConnectWithoutContact sx={{display: {xs: "block", sm: "none"}, fontSize:"36px"}} />
-                <Search> <InputBase  placeholder="search..." /> </Search>
+                <ConnectWithoutContact sx={{display: {xs: "block", sm: "none"}, fontSize: "36px"}}/>
+                <Search> <InputBase placeholder="search..."/> </Search>
                 <Icons>
                     <Badge badgeContent={4} color="error">
-                        <Mail color="action" />
+                        <Mail color="action"/>
                     </Badge>
                     <Badge badgeContent={4} color="error">
-                        <Notifications color="action" />
+                        <Notifications color="action"/>
                     </Badge>
-                    <Avatar onClick={() => {setOpen(true)}} sx={{width: "30px", height: "30px"}} alt="Muhammad Fahad Umer" src="https://res.cloudinary.com/torre-technologies-co/image/upload/c_fill,h_150,w_150/v0/origin/starrgate/users/profile_8531aed25eb4fe182b53de57618e807df83610e8.jpg" />
+                    <Avatar onClick={() => {
+                        setOpen(true)
+                    }} sx={{width: "30px", height: "30px"}} alt="Muhammad Fahad Umer"
+                            src="https://res.cloudinary.com/torre-technologies-co/image/upload/c_fill,h_150,w_150/v0/origin/starrgate/users/profile_8531aed25eb4fe182b53de57618e807df83610e8.jpg"/>
                 </Icons>
                 <Profile onClick={() => setOpen(true)}>
-                    <Avatar sx={{width: "30px", height: "30px"}} alt="Muhammad Fahad Umer" src="https://res.cloudinary.com/torre-technologies-co/image/upload/c_fill,h_150,w_150/v0/origin/starrgate/users/profile_8531aed25eb4fe182b53de57618e807df83610e8.jpg" />
+                    <Avatar sx={{width: "30px", height: "30px"}} alt="Muhammad Fahad Umer"
+                            src="https://res.cloudinary.com/torre-technologies-co/image/upload/c_fill,h_150,w_150/v0/origin/starrgate/users/profile_8531aed25eb4fe182b53de57618e807df83610e8.jpg"/>
                     <Typography variant="span">Muhammad</Typography>
                 </Profile>
             </StyledToolbar>
@@ -54,7 +58,7 @@ function Navbar() {
                 id="basic-menu"
                 open={open}
                 onClose={() => setOpen(false)}
-                anchorOrigin = {{
+                anchorOrigin={{
                     vertical: 'top',
                     horizontal: "right",
                 }}
