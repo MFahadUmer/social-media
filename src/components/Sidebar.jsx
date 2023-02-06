@@ -2,7 +2,7 @@ import React from 'react';
 import {Box, List, ListItemButton, ListItemIcon, ListItemText, Switch} from "@mui/material";
 import {AccountBox, Article, Group, House, ModeNight, Person, Settings, Storefront} from "@mui/icons-material";
 
-function Sidebar() {
+function Sidebar({changeMode}) {
     return (
         <Box flex={1} sx={{display: {xs: "none", md: "flex"}}}>
             <Box position="fixed" sx={{marginTop: "65px"}}>
@@ -53,7 +53,7 @@ function Sidebar() {
                         <ListItemIcon>
                             <ModeNight/>
                         </ListItemIcon>
-                        <Switch defaultChecked/>
+                        <Switch defaultChecked onClick={changeMode}/>
                     </ListItemButton>
                 </List>
             </Box>
