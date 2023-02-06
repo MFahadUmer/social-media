@@ -67,7 +67,6 @@ After you're finished please remove all the comments and instructions!
 ## 🛠 Built With <a name="built-with"></a>
 
 - **React.JS**
-- **ApexCharts**
 - **MUi**
 
 ### Tech Stack <a name="tech-stack"></a>
